@@ -1,0 +1,54 @@
+Arguments: 
+  /usr/local/Cellar/node/12.4.0/bin/node /usr/local/Cellar/yarn/1.17.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/bin:/Users/tvaishnav/apps/scala-2.11.8/bin:/Users/tvaishnav/apps/apache-maven-3.2.1/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/bin:/Users/tvaishnav/apps/scala-2.11.8/bin:/Users/tvaishnav/apps/apache-maven-3.2.1/bin
+
+Yarn version: 
+  1.17.0
+
+Node version: 
+  12.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Shobhita/lambda/projects/webauth-iii-challenge/package.json: Unexpected token / in JSON at position 284
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+      "name": "auth-iii-guided",
+      "version": "1.0.0",
+      "description": "Auth III Challenge Project",
+      "main": "index.js",
+      "scripts": {
+        "server": "nodemon",
+        "start": "node index.js"
+      },
+      "keywords": [],
+      "author": "Shobhita",
+      "dependencies": {
+      //   "bcryptjs": "^2.4.3",
+      //   "cors": "^2.8.5",
+      //   "express": "^4.17.1",
+      //   "helmet": "^3.19.0",
+      //   "jsonwebtoken": "^8.5.1",
+      //   "knex": "^0.19.1",
+      //   "sqlite3": "^4.0.9"
+      },
+      "devDependencies": {
+        "nodemon": "^1.19.1"
+      }
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
