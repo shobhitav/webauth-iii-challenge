@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
+const jwt=require('jsonwebtoken')
 
 const Users = require('../users/user-model.js');
 
@@ -33,7 +34,7 @@ router.post('/register', (req, res) => {
           const token=genToken(user);
          
           res.status(200).json({
-            message: `Welcome ${user.username} is logged in `
+            message: `Welcome ${user.username} is logged in `, token
           });
         } else {
           res.status(401).json({ message: 'Invalid Credentials' });
@@ -44,7 +45,8 @@ router.post('/register', (req, res) => {
       });
   });
   
-  function genToken(username){
+  function genToken(user){
+    
     const payload= {
       subject:"user",
       username:user.username
